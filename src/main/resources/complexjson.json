@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties":
+  {
+    "inputItem1":
+    {
+      "type": "string",
+      "enum":
+      [
+        "AB",
+        "BC",
+        "CD"
+      ]
+    },
+
+    "inputItem2":
+    {
+      "type": "array",
+      "uniqueItems": true,
+      "items":
+      {
+        "type": "object",
+        "properties":
+        {
+          "textToRemove":
+          {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

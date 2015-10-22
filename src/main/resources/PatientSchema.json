@@ -1,0 +1,40 @@
+{
+  "type": "object",
+
+  "properties": {
+    "patient": {
+      "type": "object",
+      "properties": {
+        "identifiers": {
+          "type": "array",
+          "items":
+            {
+              "$ref": "#/definitions/identifier"
+            }
+          ,
+          "required": [
+            "0"
+          ]
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "identifier": {
+      "type": "object",
+      "properties": {
+        "system": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "system",
+        "value"
+      ]
+    }
+  }
+}
